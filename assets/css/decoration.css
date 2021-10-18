@@ -1,0 +1,320 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:content-box;
+    text-decoration: none;
+    color:#FFF;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+body{
+    background-color:#CCC;
+}
+header{
+    background-color:#000;
+    height: 80px;
+    width:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.container{
+    width:1140px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.logo{
+    width:60px;
+    border-radius:50%;
+    cursor:pointer;
+}
+.right, .left, .languages{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.right a{
+    color:#CCC;
+    margin:10px;
+    font-size:12px;
+}
+.menu a{
+    margin:10px;
+    transition:all ease 0.2s;
+}
+.menu a:hover{
+    color:#e78428;
+}
+
+/* fim do header */
+
+/* começo do banner e slides */
+
+@keyframes arrowDown{
+    0%{
+        bottom:15px;
+    }
+    50%{
+        bottom:10px;
+    }
+    100%{
+        bottom:15px;
+    }
+}
+@keyframes arrowLeft{
+    0%{
+        left:15px;
+    }
+    50%{
+        left:10px;
+    }
+    100%{
+        left:15px;
+    }
+}
+@keyframes arrowRight{
+    0%{
+        right:15px;
+    }
+    50%{
+        right:10px;
+    }
+    100%{
+        right:15px;
+    }
+}
+
+.banner{
+    background-image:url(/Site\ Rebireca\ Off\ arquitetura/assets/imagens/banner.jpg);
+    background-size:cover;
+    background-position:center;
+    height:calc(100vh - 80px);
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-flow:column;
+}
+.bannerSlides{
+    text-align:center;
+    cursor:pointer;
+    height:calc(100vh - 80px);
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:rgba(0, 0, 0, 0.3);
+    flex-flow:column;
+}
+.bannerSlideText h1{
+    margin-top:10px;
+}
+.bannerSlideText p{
+    display:block;
+    width:250px;
+    margin-top:10px;
+}
+.arrow-down, .arrow-right, .arrow-left{
+    cursor:pointer;
+    position:absolute;
+    width:25px;
+    border-radius:50%;
+    background-color:rgba(0, 0, 0, 0.2);
+    padding:3px;
+}
+.arrow-down:hover,
+.arrow-right:hover,
+.arrow-left:hover{
+    width:30px;
+}
+.arrow-down{
+    bottom:10px;
+    animation-name:arrowDown;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+.arrow-left{
+    left:10px;
+    animation-name:arrowLeft;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+.arrow-right{
+    right:10px;
+    animation-name:arrowRight;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+main{
+    background-color:#CCC;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-flow:column;
+}
+.fieldTop{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:35px 0px 5px 0px;
+}
+.fieldtrace{
+    background-color: #999;
+    width:375px;
+    height:1px;
+    margin:20px;
+}
+.fieldTop h1{
+    font-size:30px;
+    margin-left:20px;
+    color:black;
+    cursor:pointer;
+}
+.field{
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.projects{
+    width:280px;
+    margin-bottom:25px;
+}
+.projectsImage, .projectsImage a{
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+}
+.projectsImage a img{
+    width: inherit;
+    height: inherit;
+    object-fit:cover;
+}
+
+/* fim do conteudo */
+
+/* começo dos contatos */
+
+.contacts{
+    width:100vw;
+    background-color:#282828;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:350px;
+}
+.contactsContainer{
+    width:1140px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.contact-people{
+    display:flex;
+    flex-flow:column;
+    align-items:center;
+    height:250px;
+    margin:10px;
+    border-left:1px solid rgb(77, 76, 76);
+    flex:1;
+}
+.contact-people:first-child{
+    border:0px;
+}
+.contact-people p, .contact-people img{
+    margin-bottom:15px;
+}
+.peopleName{
+    font-size:22px;
+    margin-bottom:10px;
+    color:#FFF;
+    font-weight:normal;
+    transition:all ease 0.2s;
+}
+.peopleName:hover{
+    color:#e78428;
+}
+.contact-people p, .contact-people text{
+    cursor:pointer;
+    color:#FFF;
+    font-size:16px;
+}
+.contact-people text{
+    font-size:18px;
+}
+
+/* fim dos contatos */
+
+/* começo do footer */
+
+footer{
+    height:60px;
+    width:100vw;
+    background-color:#000;
+    font-size:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-flow:column;
+}
+.tracinho{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(231,132,40,1) 50%, rgba(0,0,0,1) 100%);
+    width:100px;
+    height:1px;
+}
+footer p, footer a{
+    cursor:pointer;
+    color:#999;
+    transition:all ease 0.2s;
+}
+
+@keyframes rainbow{
+    100%,0%{
+        color: rgb(255,0,0);
+    }
+    8%{
+        color: rgb(255,127,0);
+    }
+    16%{
+        color: rgb(255,255,0);
+    }
+    25%{
+        color: rgb(127,255,0);
+    }
+    33%{
+        color: rgb(0,255,0);
+    }
+    41%{
+        color: rgb(0,255,127);
+    }
+    50%{
+        color: rgb(0,255,255);
+    }
+    58%{
+        color: rgb(0,127,255);
+    }
+    66%{
+        color: rgb(0,0,255);
+    }
+    75%{
+        color: rgb(127,0,255);
+    }
+    83%{
+        color: rgb(255,0,255);
+    }
+    91%{
+        color: rgb(255,0,127);
+    }
+    100%{ 
+        color: rgb(255,0,127);
+    }
+}
+
+footer #created:hover{
+    animation-name:rainbow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
