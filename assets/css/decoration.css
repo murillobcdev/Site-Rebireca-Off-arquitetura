@@ -17,6 +17,10 @@ header{
     align-items:center;
     justify-content:center;
 }
+.menuOculto{
+    display:none;
+    transition:all 0.5s ease;
+}
 .container{
     width:1140px;
     display:flex;
@@ -44,6 +48,9 @@ header{
 }
 .menu a:hover{
     color:#e78428;
+}
+.menuLogo{
+    display:none;
 }
 
 /* fim do header */
@@ -151,18 +158,20 @@ main{
     align-items:center;
     justify-content:center;
     flex-flow:column;
+    width:100%;
 }
 .fieldTop{
     display:flex;
     align-items:center;
     justify-content:center;
     margin:35px 0px 5px 0px;
+    width:inherit;
 }
 .fieldtrace{
     background-color: #999;
-    width:375px;
     height:1px;
     margin:20px;
+    flex:1;
 }
 .fieldTop h1{
     font-size:30px;
@@ -190,7 +199,7 @@ main{
 .projectsImage a img{
     width: inherit;
     height: inherit;
-    object-fit:cover;
+    object-fit: cover;
 }
 
 /* fim do conteudo */
@@ -198,7 +207,7 @@ main{
 /* começo dos contatos */
 
 .contacts{
-    width:100vw;
+    width:100%;
     background-color:#282828;
     display:flex;
     justify-content:center;
@@ -251,7 +260,7 @@ main{
 
 footer{
     height:60px;
-    width:100vw;
+    width:100%;
     background-color:#000;
     font-size:15px;
     display:flex;
@@ -312,9 +321,81 @@ footer p, footer a{
         color: rgb(255,0,127);
     }
 }
-
 footer #created:hover{
     animation-name:rainbow;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+}
+
+/* responsividade */ 
+
+@media (max-width:1025px){
+    /*projetos de 2 por 2 */
+    .field, .container{
+        width:800px;
+    }
+}
+@media (max-width:769px){
+    /* menu responsivo */
+    .field, .container{
+        width:600px;
+    }
+}
+@media (max-width:426px){
+    /* footer em coluna */
+    .menuOculto{
+        justify-content:center;
+        align-items:center;
+        font-size:15px;
+        background-color:rgba(255, 255, 255, 0.1);
+        margin-left:50px;
+        border-radius:5px;
+    }
+    .menuOculto a{
+        padding:5px;
+        color:white;
+        display:inline;
+        text-align:center;
+    }
+    .menuLogo{
+        display:block;
+        width:18px;
+        margin-right: 15px;
+    }
+    .arrow-down{
+        display:none;
+    }
+    .container{
+        justify-content:space-between;
+        align-items:center;
+    }
+    .logo:first-child{
+        margin-left:15px;
+    }
+    .menu, .languages{
+        display:none;
+    }
+    .contactsContainer{
+        width:400px;
+        flex-flow:column;
+    }
+    .contacts{
+        height:auto;
+    }
+    .contact-people{
+        height:auto;
+        border:0px;
+    }
+    .contactTrace{
+        background-color:#e9a25f5e;
+        height:1px;
+        width:250px;
+    }
+    .field{
+        flex-flow:column;
+        align-items:center;
+    }
+    .fieldTop h1{
+        font-size:20px;
+    }
 }

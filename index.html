@@ -9,6 +9,17 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400&display=swap');
     </style>
+        <script type="text/javascript">
+            window.onload = function(){
+            document.querySelector(".menuLogo").addEventListener("click", function(){
+            if(document.querySelector(".menuOculto").style.display == 'flex') {
+            document.querySelector(".menuOculto").style.display = 'none';
+            } else{
+            document.querySelector(".menuOculto").style.display = 'flex';
+            }
+            });
+            };
+        </script>
 </head>
 <body>
     <header>
@@ -32,7 +43,14 @@
                     <a href="">Reviews</a>
                     <a href="">Contato</a>
                 </nav>
+                <nav class="menuOculto">
+                    <a href="">Home</a>
+                    <a href="">Portfólio</a>
+                    <a href="">Reviews</a>
+                    <a href="">Contato</a>
+                </nav>
             </div>
+                <img class="menuLogo" src="assets/icones/menu.png"/>
         </div>
     </header>
     <section class="banner">
@@ -145,6 +163,8 @@
                 <p>arquiteta e urbanista</p>
                 <text>Texto descritivo qualquer</text>
             </div>
+            <div class="contactTrace">
+            </div>
             <div class="contact-people">
                 <a href="https://www.instagram.com/off.arquitetura/"><h1 class="peopleName">off.arquitetura</h1></a>
                 <img class="logo" src="assets/Imagens/OFFLOGO.png">  
@@ -152,6 +172,8 @@
                 <p>urbanismo</p>
                 <p>paisagismo</p>
                 <p>design</p>           
+            </div>
+            <div class="contactTrace">
             </div>
             <div class="contact-people">
                 <a href="https://www.instagram.com/victorfontanelli/"><h1 class="peopleName">Victor Fontanelli</h1></a>
