@@ -113,15 +113,15 @@ header {
 }
 
 .b1 {
-    background-image: url(/Site\ Rebireca\ Off\ arquitetura/assets/imagens/banner.jpg);
+    background-image: url(./banner.jpg);
 }
 
 .b2 {
-    background-image: url(/Site\ Rebireca\ Off\ arquitetura/assets/imagens/banner2.jpg);
+    background-image: url(./banner2.jpg);
 }
 
 .b3 {
-    background-image: url(/Site\ Rebireca\ Off\ arquitetura/assets/imagens/banner3.jpg);
+    background-image: url(./banner3.jpg);
 }
 
 .bannerSlideText h1 {
@@ -133,7 +133,17 @@ header {
     width: 250px;
     margin-top: 10px;
 }
-
+@keyframes arrowDown{
+    0%{
+        bottom:10px;
+    }
+    50%{
+        bottom:15px;
+    }
+    100%{
+        bottom:10px;
+    }
+}
 .arrow-down {
     cursor: pointer;
     position: absolute;
