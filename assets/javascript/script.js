@@ -22,17 +22,17 @@ document.querySelector(".c1").addEventListener("click", function (){
 function meio() {
     document.querySelector(".banner").classList.remove("b1", "b2");
     document.querySelector(".banner").classList.add("b3");
-    setTimeout(direita, 2500);
+    setTimeout(direita, 3100);
 };
 function direita() {
     document.querySelector(".banner").classList.remove("b2", "b3");
     document.querySelector(".banner").classList.add("b1");
-    setTimeout(esquerda, 2500);
+    setTimeout(esquerda, 3100);
 }
 function esquerda() {
     document.querySelector(".banner").classList.add("b2");
     document.querySelector(".banner").classList.remove("b3", "b1");
-    setTimeout(meio, 2500);
+    setTimeout(meio, 3100);
 }
 
 function scrollar() {
