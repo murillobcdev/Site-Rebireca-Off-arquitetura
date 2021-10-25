@@ -58,6 +58,7 @@ header {
 .menu a {
     margin: 10px;
     transition: all ease 0.2s;
+    font-size:18px;
 }
 
 .menu a:hover {
