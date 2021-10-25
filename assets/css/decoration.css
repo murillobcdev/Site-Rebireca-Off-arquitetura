@@ -366,7 +366,7 @@ footer #created:hover {
     }
 }
 
-@media (max-width:769px) {
+@media (max-width:800px) and (min-width:430px){
     /* menu responsivo */
     .field, .container {
         width: 80%;
