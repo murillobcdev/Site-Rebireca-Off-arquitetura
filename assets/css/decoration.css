@@ -1,460 +1,170 @@
 * {
-    margin: 0px;
+    font-family: 'Roboto', sans-serif;
     padding: 0px;
-    box-sizing: content-box;
-    text-decoration: none;
-    color: #FFF;
-    font-family: 'Alegreya Sans', sans-serif;
+    margin: 0px;
+    box-sizing: border-box;
+    cursor: pointer;
 }
 
 body {
-    background-color: #CCC;
-}
-
-header {
-    background-color: #000;
-    height: 80px;
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.menuOculto {
-    display: none;
-}
-
-.menuOculto a {
-    transition: all .3s ease;
-}
-.left a{
-    cursor:pointer;
-}
-.container {
-    width: 1140px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    color: var(--bs-gray-900);
 }
 
 .logo {
-    width: 60px;
+    width: 50px;
     border-radius: 50%;
-    cursor: pointer;
 }
 
-.right, .left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.right a {
-    color: #CCC;
-    margin: 10px;
-    font-size: 12px;
-}
-
-.menu a {
-    margin: 10px;
-    transition: all ease 0.2s;
-    font-size:18px;
-}
-
-.menu a:hover {
-    color: #e78428;
-}
-
-.menuOculto a:hover {
-    color: #e78428;
-}
-
-.menuLogo {
-    display: none;
-}
-
-/* fim do header */
-
-/* começo do banner e slides */
-
-@keyframes arrowLeft {
-    0% {
-        left: 15px;
-    }
-    50% {
-        left: 10px;
-    }
-    100% {
-        left: 15px;
-    }
-}
-
-.banner {
-    background-size: cover;
-    background-position: center;
-    height: calc(100vh - 80px);
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
-    transition: all linear 1.5s;
-}
-
-.bannerSlides {
+.nav-item {
     text-align: center;
-    cursor: pointer;
-    height: calc(100vh - 80px);
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+.nav-link text {
+    transition: all ease 0.2s;
+}
+
+.nav-link text:hover {
+    color: rgb(221, 171, 8);
+}
+
+.carousel-caption h5, .carousel-caption p {
+    color: var(--bs-white);
+    margin: 15px 5px;
+}
+
+.carousel-caption {
+    transform: translateY(-50%);
+    bottom: initial;
+    top: 60%;
+    left: 30%;
+    right: 30%;
     background-color: rgba(0, 0, 0, 0.3);
-    flex-flow: column;
 }
 
-.b1 {
-    background-image: url(./banner.jpg);
-}
-
-.b2 {
-    background-image: url(./banner2.jpg);
-}
-
-.b3 {
-    background-image: url(./banner3.jpg);
-}
-
-.bannerSlideText h1 {
-    margin-top: 10px;
-}
-
-.bannerSlideText p {
-    display: block;
-    width: 250px;
-    margin-top: 10px;
-}
-@keyframes arrowDown{
-    0%{
-        bottom:10px;
-    }
-    50%{
-        bottom:15px;
-    }
-    100%{
-        bottom:10px;
-    }
-}
-.arrow-down {
-    cursor: pointer;
-    position: absolute;
-    width: 25px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 3px;
-    bottom: 10px;
-    animation-name: arrowDown;
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
-}
-
-.arrow-down:hover {
-    width: 30px;
-}
-
-main {
-    background-color: #CCC;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
-    width: 100%;
-    height: 100%;
-}
-
-.fieldTop {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 35px 0px 5px 0px;
-    width: inherit;
-}
-
-.fieldtrace {
-    background-color: #999;
-    height: 1px;
-    margin: 20px;
-    flex: 1;
-}
-
-.fieldTop h1 {
-    font-size: 30px;
-    margin-left: 20px;
-    color: black;
-    cursor: pointer;
-}
-
-.field {
-    width: 100vw;
-    max-width: 1140px;
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.projects {
-    margin-bottom: 40px;
-}
-
-.projectsImage, .projectsImage a, .hover {
-    width: 260px;
-    height: 160px;
-}
-
-.hover {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    display: none;
-}
-
-.projectsImage a img {
-    width: inherit;
-    height: inherit;
+.carousel-item img {
     object-fit: cover;
+    height: calc(100vh - 70px);
 }
 
-.projects:hover .hover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.portImages {
+    width: 280px;
+    height: 186.92px;
+}
+
+.overlay {
+    position: absolute;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 280px;
+    height: 186.92px;
     cursor: pointer;
 }
 
-/* fim do conteudo */
-
-/* começo dos contatos */
-
-.contacts {
-    width: 100%;
-    background-color: #282828;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 350px;
+.overlay p {
+    color: var(--bs-white);
 }
 
-.contactsContainer {
-    width: 1140px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.portProjects:hover .overlay {
+    opacity: 1;
 }
 
-.contact-people {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    height: 250px;
-    margin: 10px;
-    border-left: 1px solid rgb(77, 76, 76);
-    flex: 1;
+/* CONTACTS HOVER  */
+
+#portFolioContacts {
+    background-color: #111;
+    color: var(--bs-white);
 }
 
-.contact-people:first-child {
+#portFolioContacts .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+#portFolioContacts .h5 {
+    transition: all .1s ease;
+}
+
+.contactCard {
+    border-left: 1px solid rgba(255, 174, 0, 0.329);
+    transition: all ease 0.3s;
+}
+
+.contactCard:first-child {
     border: 0px;
 }
 
-.contact-people p, .contact-people img {
-    margin-bottom: 15px;
+.socialIcones {
+    background-color: rgba(34, 34, 34, 0.905);
+    border-radius: 5px;
 }
 
-.peopleName {
-    font-size: 22px;
-    margin-bottom: 10px;
-    color: #FFF;
-    font-weight: normal;
-    transition: all ease 0.2s;
+.socialLogo {
+    width: 20px;
+    height: auto;
+    margin: 3px;
 }
 
-.peopleName:hover {
-    color: #e78428;
+/************
+*/
+
+.contactCard:hover {
+    background-color: rgb(255, 204, 0);
+    box-shadow: 0px 0px 5px;
+    color: black;
 }
 
-.contact-people p, .contact-people text {
-    cursor: pointer;
-    color: #FFF;
-    font-size: 16px;
+.contactCard:hover .avatar {
+    box-shadow: 0px 0px 15px;
 }
 
-.contact-people text {
-    font-size: 18px;
+.contactCard:hover .contactdesc{
+    text-shadow: 1px 1px 5px;
+}
+.contactCard:hover .h5{
+    text-shadow: 1px 1px 5px;
 }
 
-/* fim dos contatos */
+/* CONTACTS HOVER  */
 
-/* começo do footer */
-
-footer {
-    height: 60px;
-    width: 100%;
-    background-color: #000;
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
+.footer {
+    background-color: #111;
+    color: var(--bs-gray-500);
+    font-size: 10px;
 }
 
 .tracinho {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(231, 132, 40, 1) 50%, rgba(0, 0, 0, 1) 100%);
-    width: 100px;
+    width: 50px;
     height: 1px;
+    background: rgb(17, 17, 17);
+    background: linear-gradient(90deg, rgba(17, 17, 17, 1) 0%, rgba(190, 159, 0, 0.671) 50%, rgba(17, 17, 17, 1) 100%);
 }
 
-footer p, footer a {
-    cursor: pointer;
-    color: #999;
-    transition: all ease 0.2s;
+.footer a {
+    text-decoration: none;
+    color: var(--bs-gray-300);
 }
 
-@keyframes rainbow {
-    100%, 0% {
-        color: rgb(255, 0, 0);
+@media (max-width:425px) {
+    .carousel-caption h5, .portFolio .container p {
+        font-size: 4vw;
     }
-    8% {
-        color: rgb(255, 127, 0);
-    }
-    16% {
-        color: rgb(255, 255, 0);
-    }
-    25% {
-        color: rgb(127, 255, 0);
-    }
-    33% {
-        color: rgb(0, 255, 0);
-    }
-    41% {
-        color: rgb(0, 255, 127);
-    }
-    50% {
-        color: rgb(0, 255, 255);
-    }
-    58% {
-        color: rgb(0, 127, 255);
-    }
-    66% {
-        color: rgb(0, 0, 255);
-    }
-    75% {
-        color: rgb(127, 0, 255);
-    }
-    83% {
-        color: rgb(255, 0, 255);
-    }
-    91% {
-        color: rgb(255, 0, 127);
-    }
-    100% {
-        color: rgb(255, 0, 127);
+    .carousel-caption p {
+        font-size: 3vw;
     }
 }
 
-footer #created:hover {
-    animation-name: rainbow;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
-
-/* responsividade */
-
-@media (max-width:1140px) {
-    /*projetos de 2 por 2 */
-    .field, .container {
-        width: 65%;
+@media(max-width:991px) {
+    .contactCard {
+        border-left: 0px;
+        border-bottom: 1px solid rgba(255, 174, 0, 0.329);
     }
-}
-
-@media (max-width:800px) and (min-width:430px){
-    /* menu responsivo */
-    .field, .container {
-        width: 80%;
+    .contactCard:first-child {
+        border-bottom: 1px solid rgba(255, 174, 0, 0.329);
     }
-}
-
-@media (min-width:426px) {
-    .menuOculto {
-        display: none !important;
-    }
-}
-
-@media (min-width:426px) and (max-width:500px) {
-    .menu a {
-        font-size: 12px;
-        color: #e78428;
-    }
-    .languages, .languages a {
-        font-size: 10px;
-    }
-}
-
-@media (max-width:426px) {
-    /* footer em coluna */
-    .menuOculto {
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 5px;
-    }
-    .menuOculto a {
-        padding: 5px;
-        color: white;
-        display: inline;
-        text-align: center;
-        font-size: 18px;
-    }
-    .menuLogo {
-        display: block;
-        width: 18px;
-        margin-right: 15px;
-    }
-    .arrow-down {
-        display: none;
-    }
-    .container {
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-    .logo:first-child {
-        margin-left: 15px;
-    }
-    .menu, .languages {
-        display: none;
-    }
-    .contactsContainer {
-        width: 400px;
-        flex-flow: column;
-    }
-    .contacts {
-        height: auto;
-    }
-    .contact-people {
-        height: auto;
+    .contactCard:last-child {
         border: 0px;
-    }
-    .contactTrace {
-        background-color: #e9a25f5e;
-        height: 1px;
-        width: 250px;
-    }
-    .field {
-        flex-flow: column;
-        align-items: center;
-    }
-    .fieldTop h1 {
-        font-size: 20px;
     }
 }
