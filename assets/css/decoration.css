@@ -48,9 +48,6 @@ body {
     background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
 }
-.unactive{
-    display:none;
-}
 
 .carousel-item img {
     object-fit: cover;
@@ -60,8 +57,8 @@ body {
 
 .portImages,
 .overlay {
-    width: 280px;
-    height: 186.92px;
+    /* width: 280px;
+    height: 186.92px; */
     filter: grayscale(100%);
 }
 
