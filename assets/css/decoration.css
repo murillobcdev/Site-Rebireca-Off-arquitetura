@@ -80,6 +80,10 @@ body {
     opacity: 1;
 }
 
+.portProjects{
+    object-fit: fill;
+}
+
 /* CONTACTS HOVER  */
 
 #portFolioContacts {
